@@ -8,6 +8,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link rel="stylesheet"  href="./styles.css">
+    
 
     <!-- Bootstrap CSS -->
     <link
@@ -23,6 +25,7 @@
     />
   </head>
   <body>
+    <!-- Navbar for header -->
     <nav
       class="navbar navbar-expand-lg navbar-light bg-light border border-primary-light"
     >
@@ -30,50 +33,75 @@
     </nav>
 
     <div class="container-fluid border border-primary-light">
+
+        <!-- Alert -->
       <form>
         <div class="alert alert-danger p-2 mt-3" role="alert">
           Some fields are missing
         </div>
+
+         <!-- Forms for input and labels -->
         <div class="row">
           <div class="col-4">
-            <label for="inputCardNumber" class="form-label">Card #</label>
-            <input type="text" id="inputCardNumber" class="form-control" />
+            <label for="inputCardNumber" 
+            class="form-label">Card #</label>
+            <input type="text" 
+            id="inputCardNumber" 
+            class="form-control p-1" />
           </div>
           <div class="col-3">
-            <label for="inputCcv" class="form-label">CCV</label>
-            <input type="text" id="inputCcv" class="form-control" />
+            <label for="inputCcv" 
+            class="form-label">CCV</label>
+            <input type="text" 
+            id="inputCcv" 
+            class="form-control p-1" />
           </div>
 
           <div class="col-5">
-            <label for="inputAmount" class="form-label">Amount</label>
-            <label for="inputAmount" class="form-label d-flex">$
-            <input type="text" id="inputAmount" class="form-control align-items-center" /></label>
+            <label for="inputAmount" 
+            class="form-label">Amount</label>
+            <label for="inputAmount" 
+            class="form-label d-flex">$
+            <input type="text" 
+            id="inputAmount" 
+            class="form-control align-items-center p-1" /></label>
             
           </div>
         </div>
 
         <div class="row mt-2">
           <div class="col-6">
-            <label for="inputCardNumber" class="form-label">First Name </label>
-            <input type="text" id="inputCardNumber" class="form-control" />
+            <label for="inputCardNumber" 
+            class="form-label">First Name </label>
+            <input type="text" 
+            id="inputCardNumber" 
+            class="form-control p-1" />
           </div>
           <div class="col-6">
-            <label for="lastName" class="form-label">Last Name</label>
-            <input type="text" id="inputCcv" class="form-control" />
+            <label for="lastName" 
+            class="form-label">Last Name</label>
+            <input type="text" 
+            id="inputCcv" 
+            class="form-control p-1" />
           </div>
         </div>
 
         <div class="row mt-2">
           <div class="col-6">
-            <label for="inputCity" class="form-label">City</label>
-            <input type="text" id="inputCity" class="form-control" />
+            <label for="inputCity" 
+            class="form-label">City</label>
+            <input type="text" 
+            id="inputCity" 
+            class="form-control p-1" />
           </div>
+
+           <!-- Dropdown Button -->
           <div class="col-3">
-            <label for="inputCcv" class="form-label">State</label>
+            <label for="inputCcv" 
+            class="form-label">State</label>
             <select
-              class="form-control form-control-lg mb-6"
-              aria-label="inputCcv"
-              id="inputCcv"
+              class="form-control form-control mb-6 p-1"
+             
             >
               <option selected>Pick a State</option>
               <option value="1">One</option>
@@ -82,33 +110,47 @@
             </select>
           </div>
           <div class="col-3">
-            <label for="inputCode" class="form-label">PostalCode</label>
-            <input type="text" id="inputCode" class="form-control" />
+            <label for="inputCode" 
+            class="form-label">PostalCode</label>
+            <input type="text" 
+            id="inputCode" 
+            class="form-control p-1" />
           </div>
         </div>
-
+               <!-- Card & input radio & icones -->
         <div class="row mt-2 mb-3">
           <div class="col-6">
-            <label for="inputCity" class="form-label">We accept:</label>
+            <label for="inputCity" 
+            class="form-label">We accept:</label>
             
             <div class="row mt-2">
               <div class="col-6"><div class="card bg-secondary">
                 <div class="row p-1">
                   <div class="col-2 d-flex align-items-center">
-                    <input type="radio"></input>
-                    <i class="fa fa-cc-mastercard p-1" aria-hidden="true"></i>
+                    <input type="radio" 
+                    name="radioCardBtn" 
+                    id="radio"></input>
+                  
+                    <i class="fa fa-cc-mastercard p-1 text-white" aria-hidden="true"></i>
                   </div>
                   <div class="col-2 d-flex align-items-center">
-                    <input type="radio">
-                    <i class="fa fa-cc-mastercard p-1" aria-hidden="true"></i>
+                    <input type="radio" 
+                    name="radioCardBtn" 
+                    id="radio">
+                    <i class="fa fa-cc-mastercard p-1 text-white" 
+                    aria-hidden="true"></i>
                   </div>
                   <div class="col-2 d-flex align-items-center">
-                    <input type="radio">
-                  </input><i class="fa fa-cc-visa p-1" aria-hidden="true"></i>
+                    <input type="radio" 
+                    name="radioCardBtn" id="radio">
+                  </input><i class="fa fa-cc-visa p-1 text-white" 
+                  aria-hidden="true"></i>
                   </div>
                   <div class="col-2 d-flex align-items-center">
-                    <input type="radio">
-                  </input><i class="fa fa-cc-paypal p-1" aria-hidden="true"></i>
+                    <input type="radio" 
+                    name="radioCardBtn" id="radio">
+                  </input><i class="fa fa-cc-paypal p-1 text-white" 
+                  aria-hidden="true"></i>
                   </div>
                 </div>
               </div></div>
@@ -118,15 +160,18 @@
 
           
           </div>
-
+                       <!-- Text area & small id  -->
           <div class="col-6 mb-4">
-            <label for="texarea" class="form-label">Message</label>
-            <textarea class="form-control" id="inputCity"></textarea>
+            <label for="texarea" 
+            class="form-label">Message</label>
+            <textarea class="form-control" 
+            id="inputCity"></textarea>
             <form action="/action_page.php">
-              <small id="textarea" class="form-text text-muted">Add any notes here.</small>
+              <small id="textarea" 
+              class="form-text text-muted">Add any notes here.</small>
           </div>
         </div>
-
+                         <!-- Buttons Cancel & Send -->
         <div class="row border border-primary-light bg-light p-3">
           <div class="col-10"></div>
           <div class="col-2 d-flex justify-content-between">
@@ -137,7 +182,9 @@
             >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary btn-sm" value="submit">
+            <button type="submit" 
+            class="btn btn-primary btn-sm" 
+            value="submit">
               Send
             </button>
             

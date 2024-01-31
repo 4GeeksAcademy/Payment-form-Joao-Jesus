@@ -1,0 +1,10 @@
+
+
+input[type="radio"]{
+    background-color: gray;
+}
+
+
+label{
+    font-weight: 500;
+}
