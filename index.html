@@ -117,7 +117,7 @@
             class="form-control p-1" />
           </div>
         </div>
-               <!-- Card & input radio & icones -->
+               <!-- Card Payment & input radio & icones -->
         <div class="row mt-2 mb-3">
           <div class="col-6">
             <label for="inputCity" 
@@ -130,7 +130,7 @@
                     <input type="radio" 
                     name="radioCardBtn" 
                     id="radio"></input>
-                  
+                    
                     <i class="fa fa-cc-mastercard p-1 text-white" aria-hidden="true"></i>
                   </div>
                   <div class="col-2 d-flex align-items-center">
@@ -138,12 +138,15 @@
                     name="radioCardBtn" 
                     id="radio">
                     <i class="fa fa-cc-mastercard p-1 text-white" 
-                    aria-hidden="true"></i>
+                    aria-hidden="true"
+                    style="width: 45%"></i>
                   </div>
                   <div class="col-2 d-flex align-items-center">
                     <input type="radio" 
-                    name="radioCardBtn" id="radio">
-                  </input><i class="fa fa-cc-visa p-1 text-white" 
+                    name="radioCardBtn" 
+                    id="radio">
+                  </input>
+                  <i class="fa fa-cc-visa p-1 text-white" 
                   aria-hidden="true"></i>
                   </div>
                   <div class="col-2 d-flex align-items-center">
@@ -165,8 +168,10 @@
             <label for="texarea" 
             class="form-label">Message</label>
             <textarea class="form-control" 
-            id="inputCity"></textarea>
-            <form action="/action_page.php">
+            id="inputCity"
+            rows="3"
+            aria-describedby="textarea"></textarea>
+            
               <small id="textarea" 
               class="form-text text-muted">Add any notes here.</small>
           </div>
@@ -174,7 +179,7 @@
                          <!-- Buttons Cancel & Send -->
         <div class="row border border-primary-light bg-light p-3">
           <div class="col-10"></div>
-          <div class="col-2 d-flex justify-content-between">
+          <div class="col-2 d-flex justify-content-end align-items-center">
             <button
               type="button"
               class="btn btn-secondary btn-sm"
