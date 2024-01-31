@@ -30,7 +30,7 @@
     </nav>
 
     <div class="container-fluid border border-primary-light">
-      <form class="">
+      <form>
         <div class="alert alert-danger p-2 mt-3" role="alert">
           Some fields are missing
         </div>
@@ -46,7 +46,9 @@
 
           <div class="col-5">
             <label for="inputAmount" class="form-label">Amount</label>
-            <input type="text" id="inputAmount" class="form-control" />
+            <label for="inputAmount" class="form-label d-flex">$
+            <input type="text" id="inputAmount" class="form-control align-items-center" /></label>
+            
           </div>
         </div>
 
@@ -88,7 +90,7 @@
         <div class="row mt-2 mb-3">
           <div class="col-6">
             <label for="inputCity" class="form-label">We accept:</label>
-
+            
             <div class="row mt-2">
               <div class="col-6"><div class="card bg-secondary">
                 <div class="row p-1">
@@ -120,6 +122,8 @@
           <div class="col-6 mb-4">
             <label for="texarea" class="form-label">Message</label>
             <textarea class="form-control" id="inputCity"></textarea>
+            <form action="/action_page.php">
+              <small id="textarea" class="form-text text-muted">Add any notes here.</small>
           </div>
         </div>
 
@@ -136,6 +140,7 @@
             <button type="submit" class="btn btn-primary btn-sm" value="submit">
               Send
             </button>
+            
           </div>
         </div>
       </form>
