@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Payment Form Example</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light border border-primary-light"
+    >
+      <h4 class="mb-0">Payment form example</h4>
+    </nav>
+
+    <div class="container-fluid border border-primary-light">
+      <form class="">
+        <div class="alert alert-danger p-2 mt-3" role="alert">
+          Some fields are missing
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <label for="inputCardNumber" class="form-label">Card #</label>
+            <input type="text" id="inputCardNumber" class="form-control" />
+          </div>
+          <div class="col-3">
+            <label for="inputCcv" class="form-label">CCV</label>
+            <input type="text" id="inputCcv" class="form-control" />
+          </div>
+
+          <div class="col-5">
+            <label for="inputAmount" class="form-label">Amount</label>
+            <input type="text" id="inputAmount" class="form-control" />
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-6">
+            <label for="inputCardNumber" class="form-label">First Name </label>
+            <input type="text" id="inputCardNumber" class="form-control" />
+          </div>
+          <div class="col-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" id="inputCcv" class="form-control" />
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" id="inputCity" class="form-control" />
+          </div>
+          <div class="col-3">
+            <label for="inputCcv" class="form-label">State</label>
+            <select
+              class="form-control form-control-lg mb-6"
+              aria-label="inputCcv"
+              id="inputCcv"
+            >
+              <option selected>Pick a State</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-3">
+            <label for="inputCode" class="form-label">PostalCode</label>
+            <input type="text" id="inputCode" class="form-control" />
+          </div>
+        </div>
+
+        <div class="row mt-2 mb-3">
+          <div class="col-6">
+            <label for="inputCity" class="form-label">We accept:</label>
+
+            <div class="row mt-2">
+              <div class="col-6"><div class="card bg-secondary">
+                <div class="row p-1">
+                  <div class="col-2 d-flex align-items-center">
+                    <input type="radio"></input>
+                    <i class="fa fa-cc-mastercard p-1" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-2 d-flex align-items-center">
+                    <input type="radio">
+                    <i class="fa fa-cc-mastercard p-1" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-2 d-flex align-items-center">
+                    <input type="radio">
+                  </input><i class="fa fa-cc-visa p-1" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-2 d-flex align-items-center">
+                    <input type="radio">
+                  </input><i class="fa fa-cc-paypal p-1" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div></div>
+              <div class="col-3"></div>
+              <div class="col-3"></div>
+            </div>
+
+          
+          </div>
+
+          <div class="col-6 mb-4">
+            <label for="texarea" class="form-label">Message</label>
+            <textarea class="form-control" id="inputCity"></textarea>
+          </div>
+        </div>
+
+        <div class="row border border-primary-light bg-light p-3">
+          <div class="col-10"></div>
+          <div class="col-2 d-flex justify-content-between">
+            <button
+              type="button"
+              class="btn btn-secondary btn-sm"
+              value="Cancel"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="btn btn-primary btn-sm" value="submit">
+              Send
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
