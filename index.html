@@ -24,7 +24,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-  <body>
+  <body class="container">
     <!-- Navbar for header -->
     <nav
       class="navbar navbar-expand-lg navbar-light bg-light border border-primary-light"
@@ -57,7 +57,8 @@
             <input type="text" 
             id="inputCcv" 
             class="form-control p-1"
-            placeholder="0000" />
+            placeholder="000"
+            max="3" />
           </div>
 
           <div class="col-5">
@@ -108,9 +109,9 @@
              
             >
               <option selected>Pick a State</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option value="1">Lisboa</option>
+              <option value="2">Porto</option>
+              <option value="3">Coimbra</option>
             </select>
           </div>
           <div class="col-3">
@@ -130,14 +131,14 @@
             <div class="row mt-2">
               <div class="col-6"><div class="card bg-secondary">
                 <div class="row p-1">
-                  <div class="col-2 d-flex align-items-center">
+                  <div class="col-3 d-flex align-items-center">
                     <input type="radio" 
                     name="radioCardBtn" 
                     id="radio"></input>
                     
                     <i class="fa fa-cc-mastercard p-1 text-white" aria-hidden="true"></i>
                   </div>
-                  <div class="col-2 d-flex align-items-center">
+                  <div class="col-3 d-flex align-items-center">
                     <input type="radio" 
                     name="radioCardBtn" 
                     id="radio">
@@ -145,7 +146,7 @@
                     aria-hidden="true"
                     style="width: 45%"></i>
                   </div>
-                  <div class="col-2 d-flex align-items-center">
+                  <div class="col-3 d-flex align-items-center">
                     <input type="radio" 
                     name="radioCardBtn" 
                     id="radio">
@@ -153,7 +154,7 @@
                   <i class="fa fa-cc-visa p-1 text-white" 
                   aria-hidden="true"></i>
                   </div>
-                  <div class="col-2 d-flex align-items-center">
+                  <div class="col-3 d-flex align-items-center">
                     <input type="radio" 
                     name="radioCardBtn" id="radio">
                   </input><i class="fa fa-cc-paypal p-1 text-white" 
@@ -161,8 +162,7 @@
                   </div>
                 </div>
               </div></div>
-              <div class="col-3"></div>
-              <div class="col-3"></div>
+              
             </div>
 
           
