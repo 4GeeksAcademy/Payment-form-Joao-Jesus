@@ -35,7 +35,7 @@
     <div class="container-fluid border border-primary-light">
 
         <!-- Alert -->
-      <form>
+      <form action="/action_page.php">
         <div class="alert alert-danger p-2 mt-3" role="alert">
           Some fields are missing
         </div>
@@ -43,33 +43,39 @@
          <!-- Forms for input and labels -->
         <div class="row">
           <div class="col-4">
+          </form>
             <label for="inputCardNumber"
-            
-            class="form-label">Card #</label>
+                    class="form-label">Card #</label>
             <input type="text" 
-            id="inputCardNumber" 
+            id="inputCardNumber"
+            name="inputCardNumber" 
             class="form-control p-1"
-            placeholder="xxxxxxxxxxxxxxxxxx"  />
+            placeholder="xxxxxxxxxxxxxxxxxx"
+            maxlength="25"  
+            required/>
           </div>
           <div class="col-3">
             <label for="inputCcv" 
             class="form-label">CCV</label>
             <input type="text" 
-            id="inputCcv" 
+            id="inputCcv"
+            name="inputCcv"  
             class="form-control p-1"
             placeholder="000"
-            max="3" />
+            max="3"
+            required />
           </div>
-
+        </form>
           <div class="col-5">
             <label for="inputAmount" 
             class="form-label">Amount</label>
             <label for="inputAmount" 
             class="form-label d-flex">$
             <input type="text" 
-            id="inputAmount" 
+            id="inputAmount"
+            name="inputAmount"  
             class="form-control align-items-center p-1" 
-            placeholder="Amount"/></label>
+            placeholder="inputAmount"/></label>
             
           </div>
         </div>
@@ -79,14 +85,16 @@
             <label for="inputCardNumber" 
             class="form-label">First Name </label>
             <input type="text" 
-            id="inputCardNumber" 
+            id="inputCardNumber"
+            name="inputCardNumber"  
             class="form-control p-1" />
           </div>
           <div class="col-6">
             <label for="lastName" 
             class="form-label">Last Name</label>
             <input type="text" 
-            id="inputCcv" 
+            id="inputCcv"
+            name="lastName"  
             class="form-control p-1" />
           </div>
         </div>
